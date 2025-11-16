@@ -1,0 +1,225 @@
+html {
+  font-family: "Comic Sans MS", monospace, Courier;
+  background-image: url('https://i.pinimg.com/originals/17/b5/de/17b5def66105a83f4764a8ddae309529.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body {
+  height: 1000px;
+  width: 600px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 45px;
+  color: lightgoldenrodyellow;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.panel {
+  height: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nameArea {
+  height: 150px;
+  width: 212px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chisatoRow1 {
+  position: relative;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  column-gap: 20px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.chisatoName {
+  background-color: red;
+  border: solid 2px black;
+  border-radius: 150px;
+}
+.chisatoImg {
+  border: solid 2px red;
+}
+
+
+.takinaRow2 {
+  position: relative;
+  height: 150px;
+  display: flex;
+  column-gap: 20px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.takinaName {
+  background-color: rgb(24, 86, 255);
+  border: solid 2px black;
+  border-radius: 150px;
+}
+.takinaImg {
+  border: solid 2px rgb(24, 86, 255);
+}
+
+.kurumiRow3 {
+  position: relative;
+  height: 150px;
+  display: flex;
+  column-gap: 20px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.kurumiImg {
+  border: solid 2px yellow;
+}
+.kurumiName {
+  background-color: yellow;
+  border: solid 2px black;
+  border-radius: 150px;
+}
+
+.aboutRow4 {
+  position: relative;
+  height: 150px;
+  width: 100%;
+  border-radius: 50px;
+  background-color: #b2ffbf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://www.kino-teatr.ru/news/29001/258749.jpg');
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+.aboutRow4 div {
+  color: rgb(10, 194, 10);
+  font-size: 45px;
+  -webkit-text-stroke: 1px white;
+}
+
+.chisatoMask {
+  position: absolute;
+  height: 151px;
+  width: 426px;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+.maskText {
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.chisatoMask:hover {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+.chisatoMask:hover .maskText {
+  opacity: 1;
+}
+
+.takinaMask {
+  position: absolute;
+  height: 151px;
+  width: 426px;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+.takinaMask:hover {
+  background-color: rgb(24, 86, 255, 0.5)
+}
+.takinaMask:hover .maskText {
+  opacity: 1;
+}
+
+.kurumiMask {
+  position: absolute;
+  height: 151px;
+  width: 426px;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+.kurumiMask:hover {
+  background-color: rgba(255, 210, 0, 0.5);
+}
+.kurumiMask:hover .maskText {
+  opacity: 1;
+}
+
+.aboutMask {
+  position: absolute;
+  height: 150px;
+  width: 600px;
+  z-index: 2;
+  background-color: rgba(0, 0, 0 ,0);
+  border-radius: 50px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s;
+}
+.aboutMask:hover {
+  background-color: rgba(0, 128, 0, 0.5);
+}
+.maskTextAbout {
+  font-size: 50px;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.aboutMask:hover .maskTextAbout {
+  opacity: 1;
+}
